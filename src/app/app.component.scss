@@ -1,0 +1,47 @@
+.navbar {
+  height: 3em;
+  background-color: green;
+  border-radius: 10px;
+  padding-left: 2em;
+  padding-right: 5em;
+
+  .title-container {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: inherit;
+  }
+  .title {
+    font-size: 25px;
+    color: floralwhite;
+    font-family: sans-serif;
+  }
+
+  .input-container {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: inherit;
+
+    #search-input {
+      border: none;
+      border-bottom: solid 1px white;
+      background-color: darkgreen;
+      border-radius: 3px;
+    }
+
+    #search-btn {
+      background-color: floralwhite;
+      border-radius: 3px;
+      border: none;
+      font-family: sans-serif;
+      margin-left: 2em;
+    }
+
+    .search-container {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+  }
+}
