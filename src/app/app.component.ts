@@ -1,12 +1,13 @@
-import { Component, ViewChild } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import { GoogleMap, MapInfoWindow, MapMarker } from '@angular/google-maps';
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'angular-google-maps-app';
 
   @ViewChild('myGoogleMap', { static: false })
@@ -27,7 +28,10 @@ export class AppComponent {
     minZoom:this.minZoom,
   }
   markers = []  as  any;
-  infoContent = ''
+  infoContent = '';
+
+  constructor(private http: HttpClient) {
+  }
 
   ngOnInit() {
     navigator.geolocation.getCurrentPosition((position) => {
@@ -35,6 +39,10 @@ export class AppComponent {
         lat: position.coords.latitude,
         lng: position.coords.longitude,
       }
+    })
+
+    this.http.get("http://localhost:8080/mesi/back/animals").subscribe((res) => {
+      console.debug(res);
     })
   }
 

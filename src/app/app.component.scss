@@ -45,3 +45,19 @@
     }
   }
 }
+
+
+.styles_regionLink__gFrZf {
+  cursor: pointer;
+  fill: #3d6abe;
+  stroke: #1e357d;
+  transition: fill .3s;
+
+  &:hover {
+    fill: green;
+  }
+}
+
+.carte-france {
+  width: 30em;
+}
