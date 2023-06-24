@@ -2,17 +2,36 @@
 
   .styles_regionLink__gFrZf {
     cursor: pointer;
-    fill: #3d6abe;
-    stroke: #1e357d;
+    fill: green;
+    stroke: darkgreen;
     transition: fill .3s;
 
     &:hover {
-      fill: green;
+      fill: darkgreen;
     }
   }
 
   .carte-france {
-    width: 30em;
+    padding-top: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
   }
 
+  .carte {
+    width: 30em;
+    border: solid black 1px;
+    padding: 0 3em 3em 3em;
+    border-radius: 4em;
+    background-color: white;
+    height: 30em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    span {
+      padding: 1em 0.5em 0.5em;
+      text-transform: uppercase;
+    }
+  }
 }

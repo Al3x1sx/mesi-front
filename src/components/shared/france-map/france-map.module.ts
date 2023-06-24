@@ -13,9 +13,6 @@ import {AppRoutingModule} from "../../../app/app-routing.module";
   ],
   exports: [
     FranceMapComponent
-  ],
-  providers: [
-    FranceMapComponent
   ]
 })
 export class FranceMapModule{}

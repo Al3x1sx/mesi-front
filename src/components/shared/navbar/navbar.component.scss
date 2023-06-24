@@ -1,47 +1,79 @@
 .navbar {
   height: 3em;
-  background-color: green;
-  border-radius: 10px;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
   padding-left: 2em;
   padding-right: 5em;
+  border: 1px solid darkgreen;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 
   .title-container {
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    width: 20%;
     height: inherit;
+    cursor: pointer;
   }
   .title {
     font-size: 25px;
-    color: floralwhite;
+    color: darkgreen;
     font-family: sans-serif;
   }
 
   .input-container {
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
+    width: 35%;
     height: inherit;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
 
     #search-input {
-      border: none;
-      border-bottom: solid 1px white;
-      background-color: darkgreen;
+      border: solid 1px darkgreen;
+      background-color: white;
       border-radius: 3px;
+
     }
 
     #search-btn {
-      background-color: floralwhite;
+      background-color: darkgreen;
       border-radius: 3px;
       border: none;
       font-family: sans-serif;
       margin-left: 2em;
+      color: white;
     }
 
     .search-container {
       display: flex;
       flex-wrap: nowrap;
       justify-content: space-between;
+    }
+  }
+
+  .tabs-container {
+    width: 70%;
+    display: flex;
+    align-items: end;
+
+    .tab {
+      border: 1px darkgreen solid;
+      min-width: 6rem;
+      height: 65%;
+      border-radius: 5px 5px 0 0;
+      margin-right: 0.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      background-color: darkgreen;
+      color: white;
+
+      &:hover {
+        background-color: white;
+        color: darkgreen;
+      }
     }
   }
 }

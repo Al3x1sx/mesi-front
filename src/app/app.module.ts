@@ -8,11 +8,13 @@ import {HttpClientModule} from "@angular/common/http";
 import {FranceMapModule} from "../components/shared/france-map/france-map.module";
 import {NavbarModule} from "../components/shared/navbar/navbar.module";
 import {HomeComponent} from "../components/pages/home/home.component";
+import {PlanModule} from "../components/pages/plan/plan.module";
+import {CommonModule} from "@angular/common";
+import {SpeciesModule} from "../components/pages/species/species.module";
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +22,10 @@ import {HomeComponent} from "../components/pages/home/home.component";
     GoogleMapsModule,
     HttpClientModule,
     FranceMapModule,
-    NavbarModule
+    NavbarModule,
+    PlanModule,
+    SpeciesModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

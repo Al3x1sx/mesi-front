@@ -1,0 +1,13 @@
+:host {
+  body {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+
+    div {
+      width: 60%;
+      background-color: darkgreen;
+      padding: 4rem;
+    }
+  }
+}

@@ -1,6 +1,18 @@
 <div class="navbar">
-  <div class="title-container">
+  <div class="title-container" [routerLink]="'/home'">
     <span class="title">Biopic</span>
+  </div>
+
+  <div class="tabs-container">
+    <div class="posts tab" [routerLink]="'/posts'">
+      POSTS
+    </div>
+    <div class="tab plan" [routerLink]="'/plan'">
+      PLAN
+    </div>
+    <div class="tab plan" [routerLink]="'/species'">
+      SPECIES
+    </div>
   </div>
 
   <div class="input-container">

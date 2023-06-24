@@ -1,0 +1,5 @@
+<h3>Voici toutes les espèces ressencées : </h3>
+
+<div *ngFor="let specie of species">
+  <span routerLink="/species/{{specie.id}}">{{specie.name}}</span>
+</div>

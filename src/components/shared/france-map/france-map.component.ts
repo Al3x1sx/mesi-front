@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-france-map',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./france-map.component.scss']
 })
 export class FranceMapComponent {
-
+  @Input() page: string = '';
 }

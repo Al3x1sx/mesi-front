@@ -1,13 +1,14 @@
 import {NgModule} from "@angular/core";
-import {HomeComponent} from "./home.component";
+import {PlanComponent} from "./plan.component";
 import {BrowserModule} from "@angular/platform-browser";
 import {AppRoutingModule} from "../../../app/app-routing.module";
 import {FranceMapModule} from "../../shared/france-map/france-map.module";
 import {FranceMapComponent} from "../../shared/france-map/france-map.component";
+import {HomeComponent} from "../home/home.component";
 
 @NgModule({
   declarations: [
-    HomeComponent
+    PlanComponent
   ],
   imports: [
     BrowserModule,
@@ -15,7 +16,9 @@ import {FranceMapComponent} from "../../shared/france-map/france-map.component";
     FranceMapModule
   ],
   exports: [
-    HomeComponent
+    PlanComponent
   ]
 })
-export class HomeModule {}
+export class PlanModule {
+
+}
